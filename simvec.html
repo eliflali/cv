@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SimVec | Architecting Semantic Intelligence</title>
+    <link rel="stylesheet" href="case-study.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">ELIF LALE <span class="mono" style="margin-left: 10px;">/
+                    SIMVEC</span></a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <span class="mono">CASE STUDY // 01</span>
+                        <h1>Architecting <br><span style="font-style: italic;">Semantic</span> Intelligence.</h1>
+                        <div class="bauhaus-grid">
+                            <div class="grid-item">
+                                <h4>Core Problem</h4>
+                                <p>Data Fragmentation in massive unstructured photo galleries.</p>
+                            </div>
+                            <div class="grid-item">
+                                <h4>The Solution</h4>
+                                <p>Neural Vector Retrieval using MLP & HNSW Indexing.</p>
+                            </div>
+                            <div class="grid-item">
+                                <h4>Performance</h4>
+                                <p>Billion-Scale Latency < 200ms at search time.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-mockup">
+                        <img src="/Users/eliflale/.gemini/antigravity/brain/bc0a0447-52fe-4b38-8ed1-ffdcee40125d/simvec_mockup_hero_1778079499818.png"
+                            alt="SimVec Smartphone Mockup">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Neural-Flow Pipeline -->
+        <section class="pipeline-section">
+            <div class="container">
+                <div class="pipeline-container">
+                    <div class="pipeline-line"></div>
+                    <div class="pipeline-progress" id="pipeline-progress"></div>
+
+                    <!-- Step 1 -->
+                    <div class="pipeline-step">
+                        <div class="step-marker">
+                            <i class="fas fa-camera"></i>
+                        </div>
+                        <div class="step-content">
+                            <span class="mono">PHASE 01</span>
+                            <h2>Raw Input</h2>
+                            <h3>SENSORY ACQUISITION</h3>
+                            <p>The system ingest raw pixels from the camera or unstructured text from the search bar.
+                                This is the entry point where real-world chaos meets digital order.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="pipeline-step">
+                        <div class="step-marker">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <div class="step-content">
+                            <span class="mono">PHASE 02</span>
+                            <h2>The Vectorizer</h2>
+                            <h3>MLP MODEL ARCHITECTURE</h3>
+                            <p>Multi-Layer Perceptron layers flatten complex visual features into a 512-dimensional
+                                vector. We map the 'meaning' of an image into a coordinate system where concepts exist
+                                as mathematical points.</p>
+                            <div class="vector-visual">
+                                <div class="vector-dot active"></div>
+                                <div class="vector-dot"></div>
+                                <div class="vector-dot active"></div>
+                                <div class="vector-dot"></div>
+                                <div class="vector-dot"></div>
+                                <div class="vector-dot active"></div>
+                                <div class="vector-dot"></div>
+                                <div class="vector-dot active"></div>
+                                <div class="vector-dot active"></div>
+                                <div class="vector-dot"></div>
+                                <div class="vector-dot"></div>
+                                <div class="vector-dot"></div>
+                                <div class="vector-dot active"></div>
+                                <div class="vector-dot active"></div>
+                                <div class="vector-dot"></div>
+                                <div class="vector-dot"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="pipeline-step">
+                        <div class="step-marker">
+                            <i class="fab fa-java"></i>
+                        </div>
+                        <div class="step-content">
+                            <span class="mono">PHASE 03</span>
+                            <h2>The Orchestrator</h2>
+                            <h3>JAVA BACKEND BRIDGING</h3>
+                            <p>A robust Java-based orchestration layer manages the high-frequency communication between
+                                the React Native UI and the specialized Python inference engine, ensuring thread safety
+                                and data integrity.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="pipeline-step">
+                        <div class="step-marker">
+                            <i class="fas fa-layer-group"></i>
+                        </div>
+                        <div class="step-content">
+                            <span class="mono">PHASE 04</span>
+                            <h2>The Milvus Vault</h2>
+                            <h3>HNSW NEAREST NEIGHBOR SEARCH</h3>
+                            <p>Query vectors are fired into the Milvus database. Using Hierarchical Navigable Small
+                                World graphs, the engine traverses billions of points in milliseconds to find the
+                                closest semantic matches.</p>
+                            <div class="vault-visual">
+                                <div class="vault-pulse"></div>
+                                <!-- dots generated via js or css -->
+                                <div class="vault-dot" style="top: 20%; left: 30%;"></div>
+                                <div class="vault-dot" style="top: 50%; left: 80%;"></div>
+                                <div class="vault-dot" style="top: 70%; left: 40%;"></div>
+                                <div class="vault-dot" style="top: 10%; left: 60%;"></div>
+                                <div class="vault-dot" style="top: 90%; left: 10%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Cards -->
+        <section class="container">
+            <h2 style="text-align: center; margin-bottom: 4rem;">Deep <span style="font-style: italic;">Dives</span>
+            </h2>
+            <div class="deep-dive-grid">
+                <div class="dive-card">
+                    <div class="card-icon"><i class="fas fa-map-marked-alt"></i></div>
+                    <h3>Semantic Mapping</h3>
+                    <p>By training on vast datasets, the MLP model learns that 'forest' and 'woods' are synonymous not
+                        by dictionary definition, but by their visual proximity in a high-dimensional feature space.</p>
+                </div>
+                <div class="dive-card">
+                    <div class="card-icon"><i class="fas fa-bolt"></i></div>
+                    <h3>HNSW Indexing</h3>
+                    <p>Standard search is O(N), which fails at scale. Our implementation uses graph-based HNSW indexing
+                        to achieve logarithmic search time, maintaining sub-200ms latency even with a billion images.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Engineering Statement -->
+        <section class="engineering-statement">
+            <div class="container">
+                <div class="statement-box">
+                    <h2>THE CORE PHILOSOPHY</h2>
+                    <p>Engineered with <span style="color: var(--color-gold);">React Native CLI</span> for maximum
+                        performance and native module control, avoiding the overhead of abstraction layers.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 ELIF LALE. ALL RIGHTS RESERVED. // ARCHITECTED WITH PRECISION.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Intersection Observer for scroll animations
+        const observerOptions = {
+            threshold: 0.2
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+
+                    // Specific logic for pipeline line
+                    if (entry.target.classList.contains('pipeline-step')) {
+                        updatePipelineProgress();
+                    }
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.pipeline-step').forEach(step => {
+            observer.observe(step);
+        });
+
+        const toggle = document.getElementById('dev-view-toggle');
+        const board = document.getElementById('architecture-board');
+
+        if (toggle) {
+            toggle.addEventListener('change', (e) => {
+                if (e.target.checked) {
+                    board.classList.add('dev-mode');
+                } else {
+                    board.classList.remove('dev-mode');
+                }
+            });
+        }
+
+        const deepdive = document.getElementById('simvec-deepdive');
+        if (deepdive) {
+            const deepObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        board.classList.add('animate-flow');
+                    }
+                });
+            }, { threshold: 0.2 });
+            deepObserver.observe(deepdive);
+        }
+
+        function updatePipelineProgress() {
+            const steps = document.querySelectorAll('.pipeline-step');
+            const visibleSteps = document.querySelectorAll('.pipeline-step.visible').length;
+            const progress = (visibleSteps / steps.length) * 100;
+            document.getElementById('pipeline-progress').style.height = progress + '%';
+        }
+
+        // Random dots for Milvus vault
+        const vault = document.querySelector('.vault-visual');
+        for (let i = 0; i < 40; i++) {
+            const dot = document.createElement('div');
+            dot.className = 'vault-dot';
+            dot.style.top = Math.random() * 100 + '%';
+            dot.style.left = Math.random() * 100 + '%';
+            dot.style.opacity = Math.random() * 0.5;
+            vault.appendChild(dot);
+        }
+    </script>
+</body>
+
+</html>

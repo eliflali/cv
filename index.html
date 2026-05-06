@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elif Lale | Computer Engineer</title>
+    <title>Elif Lale Kurtnazar | Computer Engineer</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
+    <div class="blueprint-grid"></div>
+
     <header>
         <nav>
-            <div class="logo">Elif Lale</div>
+            <div class="logo">ELIF LALE <span class="gold-text">KURTNAZAR</span></div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
@@ -30,27 +38,42 @@
 
     <main>
         <section id="hero">
+            <div class="hero-decorative-circle"></div>
+            <div class="hero-decorative-square"></div>
             <div class="container">
-                <h1 class="fade-in">Elif Lale</h1>
-                <h2 class="fade-in">Computer Engineer | METU</h2>
-                <p class="fade-in">Building innovative solutions with passion and precision.</p>
-                <div class="hero-buttons fade-in">
-                    <a href="#contact" class="btn primary-btn">Contact Me</a>
-                    <a href="#projects" class="btn secondary-btn">View Projects</a>
+                <div class="hero-content">
+                    <p class="fade-in pre-title">COMPUTER ENGINEER</p>
+                    <h1 class="fade-in">Elif <span class="italic-gold">Lale</span></h1>
+                    <h2 class="fade-in">M.Sc. in Computer Science @ TU Berlin</h2>
+                    <p class="fade-in hero-desc"></p>
+                    <div class="hero-buttons fade-in">
+                        <a href="#contact" class="btn primary-btn">Initiate Contact</a>
+                        <a href="#projects" class="btn secondary-btn">View Schematics</a>
+                    </div>
                 </div>
             </div>
         </section>
 
+        <div class="klimt-divider">
+            <svg viewBox="0 0 1440 100" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0,50 C300,150 600,-50 1440,50" stroke="var(--accent-gold)" stroke-width="2" />
+                <path d="M0,60 C300,160 600,-40 1440,60" stroke="var(--accent-gold)" stroke-width="0.5" />
+                <circle cx="150" cy="85" r="4" fill="var(--accent-gold)" />
+                <circle cx="850" cy="15" r="6" fill="none" stroke="var(--accent-gold)" />
+            </svg>
+        </div>
+
         <section id="about">
             <div class="container">
-                <h2 class="section-title">About Me</h2>
+                <h2 class="section-title">About <span class="italic-gold">Me</span></h2>
                 <div class="about-content">
                     <div class="about-text">
-                        <p>I'm a Computer Engineering graduate from METU (Middle East Technical University) 
-                        with a cGPA of 3.27/4.00. I'm passionate about learning new things, taking on challenges, 
-                        and growing through hands-on experience.</p>
-                        <p>I thrive in team environments where ideas are shared openly, and I believe collaboration 
-                        is just as important as enjoying the process.</p>
+                        <p class="drop-cap">I am a Computer Engineering graduate from METU (Middle East Technical
+                            University) with a cGPA of 3.27/4.00. I approach software engineering as both a rigid
+                            science and an expressive art, balancing functional requirements with aesthetic code.</p>
+                        <p>I thrive in environments where structure meets creativity. From developing complex backends
+                            to highly interactive frontends, I believe collaboration is the ultimate tool to craft
+                            impactful digital experiences.</p>
                     </div>
                 </div>
             </div>
@@ -58,73 +81,69 @@
 
         <section id="experience">
             <div class="container">
-                <h2 class="section-title">Experience</h2>
+                <h2 class="section-title">Professional <span class="italic-gold">Timeline</span></h2>
                 <div class="timeline">
+                    <!-- Co-Founder -->
                     <div class="timeline-item">
-                        <div class="timeline-dot"></div>
                         <div class="timeline-content">
-                            <h3>Co-Founder  </h3>
+                            <span class="timeline-date">07.2025 — 10.2025</span>
+                            <h3>Co-Founder</h3>
                             <h4>Ordaburda</h4>
-                            <p class="timeline-date"> July 2025 - October 2025</p>
-                            <p>I co-founded a startup called ordaburda, a social platform designed to connect people attending events. We built both the website using React and the mobile app with React Native. I was involved in every aspect of the business, from development and marketing to business development. Although the project is no longer active, it gave me hands-on experience building a product end-to-end.</p>
+                            <p>Co-founded a social platform connecting event attendees. Built both web (React) and
+                                mobile (React Native) ecosystems. Orchestrated the full lifecycle: from bare-metal
+                                development to market positioning.</p>
                         </div>
                     </div>
-
+                    <!-- Full-Stack Developer -->
                     <div class="timeline-item">
-                        <div class="timeline-dot"></div>
                         <div class="timeline-content">
+                            <span class="timeline-date">09.2023 — 06.2025</span>
                             <h3>Full-Stack Developer</h3>
                             <h4>Neural Bridge AI</h4>
-                            <p class="timeline-date">September 2023 - June 2025</p>
-                            <p>Using ReactJS, TypeScript, and Python, I have developed both the front-end and
-                            back-end of various projects. Additionally, I have experience with CI/CD on GitHub
-                            and am currently working on a finance project.</p>
+                            <p>Engineered comprehensive full-stack architectures using ReactJS, TypeScript, and Python.
+                                Streamlined deployment with CI/CD on GitHub, driving ongoing innovation in financial
+                                applications.</p>
                         </div>
                     </div>
-                    
+                    <!-- AI Intern -->
                     <div class="timeline-item">
-                        <div class="timeline-dot"></div>
                         <div class="timeline-content">
+                            <span class="timeline-date">06.2024 — 08.2024</span>
                             <h3>AI Intern</h3>
                             <h4>GT-ARC, Technical University of Berlin</h4>
-                            <p class="timeline-date">June 2024 - August 2024</p>
-                            <p>Made research on image processing on autonomous vehicles. Using ROS, Python,
-                            Scrapi and React, developed Frontend elements for screening of autonomous
-                            devices.</p>
+                            <p>Conducted autonomous vehicle image processing research. Leveraged ROS, Python, Scrapi,
+                                and React to architect frontend dashboards for monitoring autonomous devices.</p>
                         </div>
                     </div>
-                    
+                    <!-- Game Developer -->
                     <div class="timeline-item">
-                        <div class="timeline-dot"></div>
                         <div class="timeline-content">
+                            <span class="timeline-date">07.2023 — 09.2023</span>
                             <h3>Game Developer</h3>
                             <h4>Deplike</h4>
-                            <p class="timeline-date">July 2023 - September 2023</p>
-                            <p>Contributed to a guitar teaching game application using Unity and C#. Worked on a new game project
-                            including AR and VR development, focusing on clean code with SOLID and OOP principles. 
-                            Used Git for version control and followed Agile methodology.</p>
+                            <p>Engineered AR/VR experiences and a guitar teaching application using Unity and C#.
+                                Championed SOLID and OOP principles to maintain a clean codebase within an Agile
+                                framework.</p>
                         </div>
                     </div>
-                    
+                    <!-- Avionics Team Member -->
                     <div class="timeline-item">
-                        <div class="timeline-dot"></div>
                         <div class="timeline-content">
+                            <span class="timeline-date">10.2022 — 07.2023</span>
                             <h3>Avionics Team Member</h3>
                             <h4>ITU Apis R&D Team</h4>
-                            <p class="timeline-date">October 2022 - July 2023</p>
-                            <p>Worked on image processing as a member of the competition team. Used Python, OpenCV, and Tensorflow for
-                            object detection and tracking on an unmanned aerial vehicle. Involved in running the model using Jetson Nano and Raspberry Pi 4.</p>
+                            <p>Executed advanced image processing for UAVs. Utilized Python, OpenCV, and TensorFlow for
+                                object detection, optimizing model execution on Jetson Nano and Raspberry Pi 4.</p>
                         </div>
                     </div>
-                    
+                    <!-- Frontend Developer -->
                     <div class="timeline-item">
-                        <div class="timeline-dot"></div>
                         <div class="timeline-content">
+                            <span class="timeline-date">10.2022 — 07.2023</span>
                             <h3>Frontend Developer</h3>
                             <h4>E-Kalite Turboard</h4>
-                            <p class="timeline-date">October 2022 - July 2023</p>
-                            <p>Contributed to the frontend of a long-term project using JavaScript and VueJS. Learned to effectively
-                            collaborate with a team on a project that has been ongoing for 6 years.</p>
+                            <p>Maintained and advanced a complex legacy frontend utilizing JavaScript and VueJS.
+                                Mastered seamless collaboration across a multi-year project landscape.</p>
                         </div>
                     </div>
                 </div>
@@ -133,58 +152,70 @@
 
         <section id="education">
             <div class="container">
-                <h2 class="section-title">Education</h2>
-                <div class="education-item">
-                    <h3>Middle East Technical University</h3>
-                    <p class="education-degree">Bachelor's Degree in Computer Engineering</p>
-                    <p class="education-date">2019 - 2025</p>
-                    <p class="education-gpa">cGPA: 3.27/4.00</p>
-                </div>
-                <div class="education-item">
-                    <h3>Eskisehir Fatih Science High School</h3>
-                    <p class="education-date">2015 - 2019</p>
+                <h2 class="section-title">Academic <span class="italic-gold">Foundation</span></h2>
+                <div class="education-grid">
+                    <div class="education-item">
+                        <div class="edu-decor"></div>
+                        <h3>Technical University of Berlin</h3>
+                        <p class="education-degree">M.Sc. in Computer Science</p>
+                        <p class="education-date">2026 — 2028</p>
+                    </div>
+                    <div class="education-item">
+                        <div class="edu-decor"></div>
+                        <h3>Middle East Technical University</h3>
+                        <p class="education-degree">B.Sc. in Computer Engineering</p>
+                        <p class="education-date">2019 — 2025</p>
+                        <p class="education-gpa">cGPA: 3.27 / 4.00</p>
+                    </div>
                 </div>
             </div>
         </section>
 
+        <div class="klimt-divider reversed">
+            <svg viewBox="0 0 1440 100" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0,50 C300,-50 600,150 1440,50" stroke="var(--accent-gold)" stroke-width="2" />
+                <path d="M0,40 C300,-40 600,160 1440,40" stroke="var(--accent-gold)" stroke-width="0.5" />
+            </svg>
+        </div>
+
         <section id="skills">
             <div class="container">
-                <h2 class="section-title">Skills</h2>
-                <div class="skills-container">
-                    <div class="skill-category">
-                        <h3>Programming Languages</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">C++</span>
-                            <span class="skill-tag">C</span>
-                            <span class="skill-tag">Python</span>
-                            <span class="skill-tag">JavaScript</span>
-                            <span class="skill-tag">TypeScript</span>
-                            <span class="skill-tag">C#</span>
+                <h2 class="section-title">Technical <span class="italic-gold">Schematics</span></h2>
+                <div class="skills-schematic">
+                    <div class="schematic-node">
+                        <div class="node-header">01 // Programming Languages</div>
+                        <div class="node-body">
+                            <span class="tech-tag">C++</span>
+                            <span class="tech-tag">C</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">C#</span>
                         </div>
                     </div>
-                    <div class="skill-category">
-                        <h3>Frameworks & Libraries</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">React</span>
-                            <span class="skill-tag">React Native</span>
-                            <span class="skill-tag">Django</span>
-                            <span class="skill-tag">Unity</span>
+                    <div class="schematic-node">
+                        <div class="node-header">02 // Frameworks & Libraries</div>
+                        <div class="node-body">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">Django</span>
+                            <span class="tech-tag">Unity</span>
                         </div>
                     </div>
-                    <div class="skill-category">
-                        <h3>Tools & Systems</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Linux</span>
-                            <span class="skill-tag">Git</span>
-                            <span class="skill-tag">CI/CD</span>
+                    <div class="schematic-node">
+                        <div class="node-header">03 // Tools & Systems</div>
+                        <div class="node-body">
+                            <span class="tech-tag">Linux</span>
+                            <span class="tech-tag">Git</span>
+                            <span class="tech-tag">CI/CD</span>
                         </div>
                     </div>
-                    <div class="skill-category">
-                        <h3>Languages</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Turkish (Native)</span>
-                            <span class="skill-tag">English (Fluent)</span>
-                            <span class="skill-tag">German</span>
+                    <div class="schematic-node">
+                        <div class="node-header">04 // Lingua Franca</div>
+                        <div class="node-body">
+                            <span class="tech-tag">Turkish (Native)</span>
+                            <span class="tech-tag">English (Fluent)</span>
+                            <span class="tech-tag">German</span>
                         </div>
                     </div>
                 </div>
@@ -193,19 +224,21 @@
 
         <section id="projects">
             <div class="container">
-                <h2 class="section-title">Projects</h2>
+                <h2 class="section-title">Selected <span class="italic-gold">Works</span></h2>
                 <div class="projects-grid">
                     <div class="project-card">
                         <div class="project-content">
                             <h3>ordaburda | Campus & City Social Network</h3>
-                            <p>A hyper-local social platform connecting university students to campus and city life. Built scalable backend systems, dynamic user profiles, and comprehensive event management to support seamless social interaction.</p>
+                            <p>A hyper-local social platform connecting university students to campus and city life.
+                                Built scalable backend systems, dynamic user profiles, and comprehensive event
+                                management to support seamless social interaction.</p>
                             <div class="project-technologies">
                                 <span class="tech-tag">React</span>
                                 <span class="tech-tag">React Native</span>
                                 <span class="tech-tag">Supabase</span>
                             </div>
                             <a href="https://www.ordaburda.com/" target="_blank" class="project-link">
-                                <i class="fas fa-external-link-alt"></i> Live Demo
+                                <i class="fas fa-external-link-alt"></i> Execute Demo
                             </a>
                         </div>
                     </div>
@@ -213,46 +246,54 @@
                     <div class="project-card">
                         <div class="project-content">
                             <h3>NASİP | Tarot & Astrology Platform</h3>
-                            <p>An AI-powered platform providing personalized guidance using GPT API and astrology tools. Developed interactive features for daily readings, spiritual analysis, and relationship compatibility insights.</p>
+                            <p>An AI-powered platform providing personalized guidance using GPT API and astrology tools.
+                                Developed interactive features for daily readings, spiritual analysis, and relationship
+                                compatibility insights.</p>
                             <div class="project-technologies">
                                 <span class="tech-tag">React</span>
                                 <span class="tech-tag">ChatGPT API</span>
                                 <span class="tech-tag">React Native</span>
                             </div>
                             <a href="https://www.nasip.online/" target="_blank" class="project-link">
-                                <i class="fas fa-external-link-alt"></i> Live Demo
+                                <i class="fas fa-external-link-alt"></i> Execute Demo
                             </a>
                         </div>
                     </div>
-                    
+
                     <div class="project-card">
                         <div class="project-content">
                             <h3>Hohopost Christmas Tree</h3>
-                            <p>A magical Christmas tree web app where you and your friends can decorate a festive tree with heartfelt notes!</p>
+                            <p>A magical Christmas tree web app where you and your friends can decorate a festive tree
+                                with heartfelt notes!</p>
                             <div class="project-technologies">
                                 <span class="tech-tag">React</span>
                                 <span class="tech-tag">Firebase</span>
-                                <span class="tech-tag">Web App</span>
                             </div>
                             <a href="https://hohopost.com" target="_blank" class="project-link">
-                                <i class="fas fa-external-link-alt"></i> Live Demo
+                                <i class="fas fa-external-link-alt"></i> Execute Demo
                             </a>
                         </div>
                     </div>
+
                     <div class="project-card">
                         <div class="project-content">
                             <h3>METU Lecture Finder</h3>
-                            <p>Django-based web application with NLP for finding lectures.</p>
+                            <p>Django-based web application with NLP for finding lectures seamlessly.</p>
                             <div class="project-technologies">
                                 <span class="tech-tag">Django</span>
                                 <span class="tech-tag">Python</span>
                                 <span class="tech-tag">NLP</span>
                             </div>
                             <a href="https://github.com/eliflali/findlecture" target="_blank" class="project-link">
-                                <i class="fab fa-github"></i> GitHub Repository
+                                <i class="fab fa-github"></i> Repository
+                            </a>
+                            <a href="metu-finder.html" class="project-link"
+                                style="margin-left: 20px; color: var(--accent-navy); border-color: var(--accent-navy);">
+                                <i class="fas fa-university"></i> View Case Study
                             </a>
                         </div>
                     </div>
+
                     <div class="project-card">
                         <div class="project-content">
                             <h3>SimVec</h3>
@@ -262,47 +303,164 @@
                                 <span class="tech-tag">Vector DB</span>
                             </div>
                             <a href="https://github.com/eliflali/SimVec" target="_blank" class="project-link">
-                                <i class="fab fa-github"></i> GitHub Repository
+                                <i class="fab fa-github"></i> Repository
+                            </a>
+                            <a href="simvec.html" class="project-link"
+                                style="margin-left: 20px; color: var(--accent-gold);">
+                                <i class="fas fa-file-alt"></i> View Case Study
                             </a>
                         </div>
                     </div>
-                    <div class="project-card">
-                        <div class="project-content">
-                            <h3>Weekly Planner</h3>
-                            <p>Task management app with a Django backend and ReactJS frontend.</p>
-                            <div class="project-technologies">
-                                <span class="tech-tag">ReactJS</span>
-                                <span class="tech-tag">Django</span>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SimVec Deep-Dive Section -->
+        <section id="simvec-deepdive" class="deepdive-section">
+            <div class="container">
+                <div class="deepdive-header">
+                    <h2 class="section-title">SimVec <span class="italic-gold">Neural Engine</span></h2>
+                    <div class="toggle-container">
+                        <span class="toggle-label">Concept</span>
+                        <label class="theme-switch">
+                            <input type="checkbox" id="dev-view-toggle">
+                            <span class="theme-slider"></span>
+                        </label>
+                        <span class="toggle-label">Dev View</span>
+                        <a href="simvec.html" class="mono"
+                            style="margin-left: 30px; font-size: 0.8rem; text-decoration: underline; color: var(--accent-gold);">Full
+                            Case Study →</a>
+                    </div>
+                </div>
+
+                <div class="glass-architecture" id="architecture-board">
+
+                    <div class="flow-grid">
+                        <div class="arch-node node-entry">
+                            <div class="phone-frame">
+                                <div class="action-trigger"><i class="fas fa-camera"></i></div>
                             </div>
-                            <a href="https://github.com/eliflali/Weekly-Planner" target="_blank" class="project-link">
-                                <i class="fab fa-github"></i> GitHub Repository
-                            </a>
+                            <div class="node-content">
+                                <h4 class="marketing-text">The Request</h4>
+                                <h4 class="dev-text">React Native Frontend</h4>
+                                <p class="dev-text">User initiates image/text query</p>
+                            </div>
+                        </div>
+
+                        <div class="flow-gap h-gap gap-1">
+                            <div class="golden-pulse"></div>
+                        </div>
+
+                        <div class="arch-node node-gatekeeper">
+                            <div class="glass-box"><i class="fab fa-java"></i></div>
+                            <div class="node-content">
+                                <h4 class="marketing-text">Traffic Controller</h4>
+                                <h4 class="dev-text">Java Orchestration Layer</h4>
+                                <p class="dev-text">Auth & Job Management</p>
+                            </div>
+                        </div>
+
+                        <div class="flow-gap h-gap gap-2">
+                            <div class="golden-pulse"></div>
+                        </div>
+
+                        <div class="arch-node node-brain">
+                            <div class="micro-copy top-right">MLP-based Semantic Mapping</div>
+                            <div class="glass-box"><i class="fas fa-brain"></i></div>
+                            <div class="node-content">
+                                <h4 class="marketing-text">Neural Processing</h4>
+                                <h4 class="dev-text">Python Processing (MLP)</h4>
+                                <p class="dev-text">Transforming Raw Data to 512-D Vectors</p>
+                            </div>
+                        </div>
+
+                        <div class="flow-gap v-gap gap-3">
+                            <div class="golden-pulse"></div>
+                        </div>
+
+                        <div class="arch-node node-core">
+                            <div class="micro-copy bottom-left">HNSW Indexing for Sub-second Latency<br>Billion-Scale
+                                Vector Retrieval</div>
+                            <div class="glass-box vector-cloud">
+                                <div class="cloud-point"></div>
+                                <div class="cloud-point"></div>
+                                <div class="cloud-point"></div>
+                                <div class="cloud-point target"></div>
+                                <div class="query-ray"></div>
+                            </div>
+                            <div class="node-content">
+                                <h4 class="marketing-text">Search Core</h4>
+                                <h4 class="dev-text">Milvus Vector DB</h4>
+                                <p class="dev-text">High-Density Similarity Search</p>
+                            </div>
+                        </div>
+
+                        <div class="flow-gap h-gap gap-4">
+                            <div class="golden-pulse"></div>
+                        </div>
+
+                        <div class="arch-node node-result">
+                            <div class="glass-box"><i class="fas fa-server"></i></div>
+                            <div class="node-content">
+                                <h4 class="marketing-text">Data Fetch</h4>
+                                <h4 class="dev-text">S3 / Image Storage</h4>
+                                <p class="dev-text">Retrieving matched assets</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const toggle = document.getElementById('dev-view-toggle');
+                const board = document.getElementById('architecture-board');
+
+                if (toggle) {
+                    toggle.addEventListener('change', (e) => {
+                        if (e.target.checked) {
+                            board.classList.add('dev-mode');
+                        } else {
+                            board.classList.remove('dev-mode');
+                        }
+                    });
+                }
+
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            board.classList.add('animate-flow');
+                        }
+                    });
+                }, { threshold: 0.2 });
+
+                const deepdive = document.getElementById('simvec-deepdive');
+                if (deepdive) observer.observe(deepdive);
+            });
+        </script>
+
         <section id="contact">
             <div class="container">
-                <h2 class="section-title">Contact Me</h2>
+                <h2 class="section-title">Establish <span class="italic-gold">Connection</span></h2>
                 <div class="contact-info">
                     <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
                         <div>
                             <h3>Location</h3>
-                            <p>1393. Street, Oguzlar, CANKAYA, Ankara</p>
+                            <p>Reichenberger Straße 61, 10999 Berlin, Germany</p>
                         </div>
                     </div>
                     <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
                         <div>
                             <h3>Email</h3>
                             <p><a href="mailto:eliflale871@gmail.com">eliflale871@gmail.com</a></p>
                         </div>
                     </div>
                     <div class="contact-item">
-                        <i class="fas fa-phone"></i>
+                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
                         <div>
                             <h3>Phone</h3>
                             <p>(+90) 554 644 54 66</p>
@@ -323,10 +481,14 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Elif Lale. All rights reserved.</p>
+            <div class="footer-content">
+                <p>&copy; 2026 ELIF LALE. ENGINEERED WITH PRECISION.</p>
+                <div class="footer-deco"></div>
+            </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
+
 </html>

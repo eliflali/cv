@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>METU Course Finder | Decoding Academic Pathways</title>
+    <link rel="stylesheet" href="academic-case-study.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">ELIF LALE <span class="mono" style="margin-left: 10px;">/ METU
+                    FINDER</span></a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <span class="mono">ACADEMIC CASE STUDY // 02</span>
+                        <h1>Decoding <br><span style="font-style: italic;">Academic</span> Pathways.</h1>
+                        <div class="academic-grid">
+                            <div class="grid-item">
+                                <h4>Framework</h4>
+                                <p>Django ORM & REST</p>
+                            </div>
+                            <div class="grid-item">
+                                <h4>NLP Engine</h4>
+                                <p>Scikit-learn (NLTK)</p>
+                            </div>
+                            <div class="grid-item">
+                                <h4>Algorithm</h4>
+                                <p>TF-IDF + Cosine Similarity</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-mockup">
+                        <img src="/Users/eliflale/.gemini/antigravity/brain/bc0a0447-52fe-4b38-8ed1-ffdcee40125d/metu_finder_mockup_hero_1778080270888.png"
+                            alt="METU Finder Laptop Mockup">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Data Harvest Section -->
+        <section class="harvest-section">
+            <div class="container">
+                <h2>The Data Harvest</h2>
+                <div class="harvest-flow">
+                    <div class="harvest-node">
+                        <i class="fas fa-globe"></i>
+                        <h3 style="color: var(--color-gold);">METU Portal</h3>
+                        <p class="mono">UNSTRUCTURED WEB DATA</p>
+                    </div>
+                    <div class="harvest-arrow"></div>
+                    <div class="harvest-node">
+                        <i class="fas fa-filter"></i>
+                        <h3 style="color: var(--color-gold);">Parsing Engine</h3>
+                        <p class="mono">REGEX & BS4 PIPELINE</p>
+                    </div>
+                    <div class="harvest-arrow"></div>
+                    <div class="harvest-node">
+                        <i class="fas fa-database"></i>
+                        <h3 style="color: var(--color-gold);">Django DB</h3>
+                        <p class="mono">STRUCTURED COURSE ENTITIES</p>
+                    </div>
+                </div>
+                <p
+                    style="text-align: center; margin-top: 4rem; opacity: 0.7; max-width: 700px; margin-left: auto; margin-right: auto;">
+                    Automated parsing of 5000+ course descriptions, credits, and prerequisites from METU's official
+                    curriculum portals.
+                </p>
+            </div>
+        </section>
+
+        <!-- Semantic Core -->
+        <section class="semantic-section">
+            <div class="container">
+                <h2 style="text-align: center; margin-bottom: 5rem;">The Semantic <span
+                        style="font-style: italic;">Core</span></h2>
+                <div class="semantic-container">
+                    <div class="semantic-text">
+                        <span class="mono">STEP 01</span>
+                        <h3>Vector Space Transformation</h3>
+                        <p>Academic interests are rarely limited to exact keywords. To handle this, we transform course
+                            descriptions into a high-dimensional vector space. Every word becomes a coordinate, and
+                            every course becomes a unique vector.</p>
+                        <br>
+                        <span class="mono">STEP 02</span>
+                        <h3>Cosine Similarity Matching</h3>
+                        <p>When a student enters a query, we calculate the angle between the query vector and every
+                            course vector in our database. A smaller angle indicates higher semantic relevance.</p>
+                    </div>
+                    <div class="viz-card" id="vector-viz">
+                        <div class="vector-compass">
+                            <div class="axis axis-x"></div>
+                            <div class="axis axis-y"></div>
+                            <div class="vector v1" id="v1"></div>
+                            <div class="vector v2" id="v2"></div>
+                            <div class="cosine-arc" id="arc"></div>
+                            <div class="mono" style="position: absolute; top: 10px; right: 10px;">Similarity: 0.942
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Course Results Showcase -->
+        <section class="container" style="padding: 6rem 0;">
+            <h2 style="text-align: center;">Result <span style="font-style: italic;">Accuracy</span></h2>
+            <div class="course-grid">
+                <div class="course-card">
+                    <div class="match-score">98%</div>
+                    <span class="mono">CENG 443</span>
+                    <h3>Introduction to HCI</h3>
+                    <p>Core principles of human-computer interaction, focused on user-centered design and iterative
+                        prototyping.</p>
+                </div>
+                <div class="course-card">
+                    <div class="match-score">91%</div>
+                    <span class="mono">CP 332</span>
+                    <h3>Urban Planning Studio</h3>
+                    <p>Designing smart city environments using participatory mapping and spatial data analysis tools.
+                    </p>
+                </div>
+                <div class="course-card">
+                    <div class="match-score">85%</div>
+                    <span class="mono">ID 401</span>
+                    <h3>Digital Design Research</h3>
+                    <p>Exploring the intersection of human behavior and digital environments through qualitative
+                        research.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Narrative -->
+        <section class="narrative-section">
+            <div class="container">
+                <div class="narrative-content">
+                    <h2>From Keyword to Meaning</h2>
+                    <p>Traditional search engines rely on exact matches—if you search for "Human Interaction," you might
+                        miss a course titled "User Experience."</p>
+                    <p>By implementing TF-IDF (Term Frequency-Inverse Document Frequency), we prioritize unique academic
+                        terms while dampening common words. This ensures that a student's vague interest is transformed
+                        into precise, data-driven recommendations.</p>
+                    <div class="code-block">
+                        <span style="color: #C5B358;"># Calculating Relevance</span><br>
+                        relevance = dot_product(v_query, v_course) / (norm(v_query) * norm(v_course))<br>
+                        results = sorted(courses, key=lambda x: cosine_similarity(query, x), reverse=True)
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 ELIF LALE. // ACADEMIC RIGOR. DIGITAL PRECISION.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Intersection Observer for vector animation
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    document.getElementById('v1').classList.add('visible');
+                    document.getElementById('v2').classList.add('visible');
+                    document.getElementById('arc').classList.add('visible');
+                }
+            });
+        }, { threshold: 0.5 });
+
+        observer.observe(document.getElementById('vector-viz'));
+
+        // Scroll reveals for sections
+        const scrollObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('section').forEach(section => {
+            section.style.opacity = 0;
+            section.style.transform = 'translateY(30px)';
+            section.style.transition = 'all 1s ease';
+            scrollObserver.observe(section);
+        });
+    </script>
+</body>
+
+</html>

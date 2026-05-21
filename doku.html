@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doku | Digitalizing Matrimony with Architectural Elegance</title>
+    <meta name="description" content="A premium technical case study on Doku, a Next-Gen Event and Wedding management micro-SaaS platform engineered with Next.js SSR, serverless Supabase, and Lemon Squeezy Merchant of Record integration.">
+    
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="doku.css">
+    
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Editorial Construction Grid lines -->
+    <div class="editorial-grid"></div>
+    <div class="thin-gold-line-v"></div>
+
+    <!-- Navigation Header -->
+    <nav id="nav-header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">ELIF LALE <span>/ DOKU</span></a>
+            <a href="index.html#projects" class="btn-back" id="btn-back-portfolio">
+                <i class="fas fa-arrow-left"></i> Back to Schematics
+            </a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section (The Premium Reception) -->
+        <section class="hero" id="doku-hero">
+            <div class="container">
+                <div class="hero-layout">
+                    <div class="hero-text scroll-fade">
+                        <span class="editorial-tag">CASE STUDY // 04</span>
+                        <h1 id="hero-main-title">Digitalizing Matrimony with <span>Architectural</span> Elegance.</h1>
+                        <p class="hero-desc">
+                            Doku is a premium, quiet-luxury Micro-SaaS event orchestration platform designed for modern couples. Combining modular design engines with high-frequency server-side operations, it solves complex guest registries, algorithmic style quizzes, and dynamic invitation rendering.
+                        </p>
+                        
+                        <!-- Bauhaus Grid Specifications -->
+                        <div class="bauhaus-grid" id="hero-metadata-grid">
+                            <div class="metadata-item">
+                                <h4>Role</h4>
+                                <p>Lead Full-Stack Engineer & Product Designer</p>
+                            </div>
+                            <div class="metadata-item">
+                                <h4>Frameworks</h4>
+                                <p>Next.js SSR & Supabase Serverless Architecture</p>
+                            </div>
+                            <div class="metadata-item">
+                                <h4>Monetization</h4>
+                                <p>Lemon Squeezy via Merchant of Record (MOR)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Double-Viewports Mockups (Desktop Admin Dashboard + Mobile RSVP invitation) -->
+                    <div class="hero-mockups-container scroll-fade" id="hero-viewports">
+                        <!-- Desktop Couple Admin Dashboard -->
+                        <div class="dashboard-mockup-desktop">
+                            <div class="mock-window-dots">
+                                <div class="mock-dot"></div>
+                                <div class="mock-dot"></div>
+                                <div class="mock-dot"></div>
+                            </div>
+                            
+                            <div class="dashboard-double-columns">
+                                <!-- Sidebar column -->
+                                <div class="mock-sidebar">
+                                    <div class="sidebar-line" style="width: 50%; height: 8px; background: var(--color-gold);"></div>
+                                    <div class="sidebar-line"></div>
+                                    <div class="sidebar-line"></div>
+                                    <div class="sidebar-line"></div>
+                                </div>
+                                
+                                <!-- Left Main Column: RSVP List Registry -->
+                                <div class="mock-column">
+                                    <div class="column-header-block"></div>
+                                    <div class="mock-guest-row" style="background: var(--color-gold-dim);"></div>
+                                    <div class="mock-guest-row"></div>
+                                    <div class="mock-guest-row"></div>
+                                    <div class="mock-guest-row"></div>
+                                    <div class="mock-guest-row"></div>
+                                </div>
+                                
+                                <!-- Right Main Column: Theme Analytics Chart Mockup -->
+                                <div class="mock-column">
+                                    <div class="column-header-block" style="width: 40%;"></div>
+                                    <div style="flex: 1; border: 1px dashed rgba(250,246,240,0.1); border-radius: 4px; display: flex; justify-content: center; align-items: center;">
+                                        <i class="fas fa-chart-line" style="color: var(--color-gold); font-size: 1.5rem; opacity: 0.6;"></i>
+                                    </div>
+                                    <div class="mock-guest-row"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mobile Invitation Mockup -->
+                        <div class="mobile-mockup-wrapper" id="mobile-invitation-frame">
+                            <div class="mobile-inner-screen">
+                                <div class="invitation-logo">C & S</div>
+                                <div class="invitation-flame-art"></div>
+                                <div style="text-align: center; margin: 1.5rem 0;">
+                                    <p style="font-family: var(--font-serif); font-size: 0.8rem; font-style: italic; color: #1A1A1A; line-height: 1.3;">
+                                        Join us for our quiet reception in Berlin
+                                    </p>
+                                    <span style="font-family: var(--font-sans); font-size: 0.45rem; color: var(--color-gold); letter-spacing: 2px; text-transform: uppercase;">Sept 2026</span>
+                                </div>
+                                
+                                <!-- Glassmorphic RSVP action card inside mockup -->
+                                <div class="glass-rsvp-card">
+                                    <h5>Are you attending?</h5>
+                                    <button class="btn-rsvp-mock" id="btn-rsvp-trigger">Confirm Presence</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Tech Stack Matrix (Performance & SEO) -->
+        <section class="tech-matrix-section" id="tech-matrix">
+            <div class="container">
+                <div class="editorial-header scroll-fade">
+                    <span class="editorial-tag">EXHIBIT A</span>
+                    <h2>The <span>Architectural</span> Stack Matrix</h2>
+                    <p>Engineered for speed, offline reliability, and SEO metadata control.</p>
+                </div>
+
+                <div class="matrix-grid">
+                    <!-- Column 1: Supabase Card -->
+                    <div class="matrix-card scroll-fade">
+                        <div class="matrix-card-border-deco"></div>
+                        <div class="card-icon"><i class="fas fa-database"></i></div>
+                        <h3>Supabase Serverless DB</h3>
+                        <p>
+                            Couples' wedding invitations experience highly concentrated traffic spikes when invitations are dispatched. To ensure sub-millisecond response times under heavy concurrent loads, Doku utilizes a serverless Supabase connection pool integrated with Postgres Database Functions. This architecture processes dynamic guest RSVP writes and dietary checkoffs concurrently with direct PL/pgSQL database execution, avoiding cold-start API gateways.
+                        </p>
+                        <span class="matrix-tech-tag">// RESPONSE METRIC: SUB-MILLISECOND TRANSACTION LIFETIMES</span>
+                    </div>
+
+                    <!-- Column 2: Next.js SSR Card -->
+                    <div class="matrix-card scroll-fade">
+                        <div class="matrix-card-border-deco"></div>
+                        <div class="card-icon"><i class="fab fa-react"></i></div>
+                        <h3>Next.js SSR Metadata Engine</h3>
+                        <p>
+                            Modern wedding communication is highly collaborative. When sharing dynamic invitation links on messaging platforms (WhatsApp, Telegram, Instagram), generating flawless rich-link previews (displaying couple names and cover images) is critical. We designed a server-side rendering (SSR) rendering cycle in Next.js that parses request URIs and pre-injects OpenGraph meta tag schemas into the document payload prior to DOM rendering, guaranteeing 100% dynamic rich-previews.
+                        </p>
+                        <span class="matrix-tech-tag">// SEO METRIC: 100% og:tag COVERAGE</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Feature Showcases -->
+        <section class="interactive-showcases-section" id="feature-showcases">
+            <div class="container">
+                
+                <!-- Feature A: Art Movement Theme Engine -->
+                <div class="editorial-header scroll-fade">
+                    <span class="editorial-tag">EXHIBIT B</span>
+                    <h2>The <span>Theme Engine</span> Simulation</h2>
+                    <p>An interactive playground showcasing how Doku utilizes CSS variables to dynamically swap art movement configurations in real-time.</p>
+                </div>
+
+                <div class="theme-engine-card-layout scroll-fade" id="theme-engine-block">
+                    <!-- Tabs -->
+                    <div class="theme-selector-tabs">
+                        <button class="theme-tab-btn active" data-theme="vienna" data-bg="#FFFFF0" data-text="#1A1A1A" data-gold="#B8860B" data-border="rgba(184, 134, 11, 0.3)" data-radius="0px" data-font="'Playfair Display', serif">
+                            <h4>Vienna Secession</h4>
+                            <div class="tab-indicator-deco"></div>
+                        </button>
+                        
+                        <button class="theme-tab-btn" data-theme="bauhaus" data-bg="#FFFFFF" data-text="#000000" data-gold="#FF3E3E" data-border="rgba(0,0,0,0.15)" data-radius="0px" data-font="'Inter', sans-serif">
+                            <h4>Bauhaus Minimalist</h4>
+                            <div class="tab-indicator-deco"></div>
+                        </button>
+                        
+                        <button class="theme-tab-btn" data-theme="impressionism" data-bg="#F6E8EA" data-text="#3E3E3E" data-gold="#8EAD9B" data-border="rgba(142, 173, 155, 0.3)" data-radius="24px" data-font="'Playfair Display', serif">
+                            <h4>Impressionism Pastel</h4>
+                            <div class="tab-indicator-deco"></div>
+                        </button>
+                        
+                        <button class="theme-tab-btn" data-theme="futurism" data-bg="#1D1E2C" data-text="#F5F5F0" data-gold="#00E5FF" data-border="rgba(0, 229, 255, 0.3)" data-radius="8px" data-font="'JetBrains Mono', monospace">
+                            <h4>Futurism Cyber</h4>
+                            <div class="tab-indicator-deco"></div>
+                        </button>
+                    </div>
+
+                    <!-- Dynamic Card Preview -->
+                    <div class="theme-preview-outer">
+                        <div class="theme-dynamic-container" id="theme-preview-target">
+                            <h3 id="preview-card-title">Sophia & Charles</h3>
+                            <div class="theme-accent-line"></div>
+                            <p id="preview-card-text">
+                                We invite you to share in our celebration of intentional love and digital sanctuary as we commit our paths under the quiet boughs.
+                            </p>
+                            <button class="btn-theme-dynamic" id="btn-preview-action">Confirm RSVP</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature B: Personalization Style Quiz Algorithmic Flow -->
+                <div class="editorial-header scroll-fade" style="margin-top: 6rem;">
+                    <span class="editorial-tag">EXHIBIT C</span>
+                    <h2>Algorithmic <span>Aesthetic Quiz</span></h2>
+                    <p>A thin-line representation tracing how user design inputs are transformed into architectural theme arrays by the backend.</p>
+                </div>
+
+                <div class="quiz-flow-card scroll-fade" id="algorithmic-quiz-board">
+                    <div class="wireframe-algorithmic-grid">
+                        <!-- Step 1 -->
+                        <div class="wireframe-step-node active">
+                            <span>STEP 01</span>
+                            <h5>User Aesthetics Inputs</h5>
+                            <p style="font-size: 0.7rem; color: var(--color-text-dim); margin-top: 0.5rem;">User selects style attributes (Curved lines vs. Stark angles)</p>
+                        </div>
+                        
+                        <!-- Arrow -->
+                        <div class="wireframe-flow-arrow"><i class="fas fa-chevron-right"></i></div>
+                        
+                        <!-- Step 2 (Algorithm calculation console) -->
+                        <div class="wireframe-calculation-pane">
+                            <span style="color: var(--color-text-bright); display: block; margin-bottom: 0.5rem;">-- Supabase Postgres Function</span>
+                            create or replace function get_aesthetic_theme(<br>
+                            &nbsp;&nbsp;weight_angles float,<br>
+                            &nbsp;&nbsp;weight_curves float<br>
+                            ) returns text language plpgsql as $$<br>
+                            begin<br>
+                            &nbsp;&nbsp;if weight_angles > 0.75 then<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;return 'BAUHAUS_GRID';<br>
+                            &nbsp;&nbsp;else<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;return 'SECESSION_CURVE';<br>
+                            &nbsp;&nbsp;end if;<br>
+                            end; $$;
+                        </div>
+                        
+                        <!-- Arrow -->
+                        <div class="wireframe-flow-arrow"><i class="fas fa-chevron-right"></i></div>
+                        
+                        <!-- Step 3 -->
+                        <div class="wireframe-step-node active">
+                            <span>STEP 03</span>
+                            <h5>Dynamic Style Swaps</h5>
+                            <p style="font-size: 0.7rem; color: var(--color-text-dim); margin-top: 0.5rem;">Injects CSS variables to dynamically style user dashboards</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature C: Guest Comfort Station & Dynamic RSVP -->
+                <div class="editorial-header scroll-fade">
+                    <span class="editorial-tag">EXHIBIT D</span>
+                    <h2>Guest <span>Comfort</span> Registry</h2>
+                    <p>Providing functional, architectural warning systems built to anticipate guest requirements on the dynamic invitation sheets.</p>
+                </div>
+
+                <div class="guest-comfort-grid scroll-fade" id="guest-comfort-cards">
+                    <!-- Notification 1 -->
+                    <div class="comfort-notification-block">
+                        <div class="comfort-icon"><i class="fas fa-cloud-sun-rain"></i></div>
+                        <h4>Weather Alert System</h4>
+                        <p>
+                            Syncs with real-time location weather APIs. Couples can toggle notifications to alert guests of sudden downpours, offering suggestions like huddling under espresso awnings in Berlin.
+                        </p>
+                    </div>
+
+                    <!-- Notification 2 -->
+                    <div class="comfort-notification-block">
+                        <div class="comfort-icon"><i class="fas fa-shoe-prints"></i></div>
+                        <h4>Stiletto/Heel warnings</h4>
+                        <p>
+                            Alerts guests of the physical reception terrains. Warns attendees if the location features gravel walks, stone plazas, or grassy gardens to coordinate footwear.
+                        </p>
+                    </div>
+
+                    <!-- Notification 3 -->
+                    <div class="comfort-notification-block">
+                        <div class="comfort-icon"><i class="fas fa-apple-whole"></i></div>
+                        <h4>Dietary Preference Maps</h4>
+                        <p>
+                            Processes and hashes allergen criteria. Allows guests to log options (Vegan, Celiac, Halal) to populate live kitchen dashboards for catering teams.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Design Tokens & Systems (Virgo Swatches) -->
+        <section class="design-tokens-section" id="design-tokens">
+            <div class="container">
+                <div class="editorial-header scroll-fade">
+                    <span class="editorial-tag">EXHIBIT E</span>
+                    <h2>Zodiac <span>Design Token</span> Palettes</h2>
+                    <p>Rigorous, tokenized design systems matching the emotional and architectural styles of zodiac archetypes.</p>
+                </div>
+
+                <div class="tokens-color-grid scroll-fade" id="zodiac-tokens-grid">
+                    <!-- Virgo -->
+                    <div class="token-palette-card">
+                        <h3>Virgo Palette</h3>
+                        <div class="token-swatch-row">
+                            <div class="token-swatch-item">
+                                <div class="color-swatch-box swatch-virgo-1"></div>
+                                <div class="swatch-details">
+                                    <h5>Ivory</h5>
+                                    <span>#FFFFF0</span>
+                                </div>
+                            </div>
+                            <div class="token-swatch-item">
+                                <div class="color-swatch-box swatch-virgo-2"></div>
+                                <div class="swatch-details">
+                                    <h5>Dark Goldenrod</h5>
+                                    <span>#B8860B</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pisces -->
+                    <div class="token-palette-card">
+                        <h3>Pisces Palette</h3>
+                        <div class="token-swatch-row">
+                            <div class="token-swatch-item">
+                                <div class="color-swatch-box swatch-pisces-1"></div>
+                                <div class="swatch-details">
+                                    <h5>Seafoam Mist</h5>
+                                    <span>#E8F1F2</span>
+                                </div>
+                            </div>
+                            <div class="token-swatch-item">
+                                <div class="color-swatch-box swatch-pisces-2"></div>
+                                <div class="swatch-details">
+                                    <h5>Midnight Indigo</h5>
+                                    <span>#1A2530</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Leo -->
+                    <div class="token-palette-card">
+                        <h3>Leo Palette</h3>
+                        <div class="token-swatch-row">
+                            <div class="token-swatch-item">
+                                <div class="color-swatch-box swatch-leo-1"></div>
+                                <div class="swatch-details">
+                                    <h5>Champagne Sand</h5>
+                                    <span>#FAF0E6</span>
+                                </div>
+                            </div>
+                            <div class="token-swatch-item">
+                                <div class="color-swatch-box swatch-leo-2"></div>
+                                <div class="swatch-details">
+                                    <h5>Royal Amber</h5>
+                                    <span>#D4AF37</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Philosophy Statement -->
+        <section class="philosophy-banner" id="philosophical-statement">
+            <div class="container">
+                <div class="philosophy-box scroll-fade">
+                    <h3>THE MINIMALIST COMPASS</h3>
+                    <p>
+                        "Matrimony deserves more than cheap templates. It demands <span>architectural spaces</span> built to stand the test of time."
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 ELIF LALE. DOKU INTERACTIVE PLATFORM SCHEMATICS. ALL RIGHTS RESERVED.</p>
+        </div>
+    </footer>
+
+    <!-- Interactive Scripts & Animations -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            // 1. Feature A: THEME ENGINE INTERACTIVE SYSTEM
+            const themeTabs = document.querySelectorAll('.theme-tab-btn');
+            const themePreviewTarget = document.getElementById('theme-preview-target');
+            
+            themeTabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    if (tab.classList.contains('active')) return;
+                    
+                    // Activate tab classes
+                    themeTabs.forEach(t => t.classList.remove('active'));
+                    tab.classList.add('active');
+                    
+                    // Retrieve dynamic color token values
+                    const bg = tab.getAttribute('data-bg');
+                    const text = tab.getAttribute('data-text');
+                    const gold = tab.getAttribute('data-gold');
+                    const border = tab.getAttribute('data-border');
+                    const radius = tab.getAttribute('data-radius');
+                    const font = tab.getAttribute('data-font');
+                    
+                    // Re-variable adjacent container styles instantly
+                    themePreviewTarget.style.setProperty('--theme-bg', bg);
+                    themePreviewTarget.style.setProperty('--theme-text', text);
+                    themePreviewTarget.style.setProperty('--theme-gold', gold);
+                    themePreviewTarget.style.setProperty('--theme-border', border);
+                    themePreviewTarget.style.setProperty('--theme-radius', radius);
+                    themePreviewTarget.style.setProperty('--theme-font', font);
+                    
+                    // Update preview content depending on theme
+                    const titleEl = document.getElementById('preview-card-title');
+                    const textEl = document.getElementById('preview-card-text');
+                    const themeName = tab.getAttribute('data-theme');
+                    
+                    if (themeName === 'bauhaus') {
+                        titleEl.textContent = 'S & C // 2026';
+                        textEl.textContent = 'GRID RESIDENCE. METROPOLIS FUNCTIONALISM. SPARK THE SPACE. REGISTER AT THE GATEWAY FOR MATRIMONIAL SCHEMATICS.';
+                    } else if (themeName === 'impressionism') {
+                        titleEl.textContent = 'Sophia & Charles';
+                        textEl.textContent = 'Beneath the dreamy pastel sky, catching warm lavender light. We invite you to join our quiet afternoon bower of laughter and love.';
+                    } else if (themeName === 'futurism') {
+                        titleEl.textContent = 'SOP_CHR_INV_v4.0';
+                        textEl.textContent = 'ESTABLISHING CONNECTION PORTAL... SYNCHRONIZING TIME SEGMENTS... REGISTER ATTENDANCE TARGET COORDINATES NOW.';
+                    } else {
+                        titleEl.textContent = 'Sophia & Charles';
+                        textEl.textContent = 'We invite you to share in our celebration of intentional love and digital sanctuary as we commit our paths under the quiet boughs.';
+                    }
+                });
+            });
+
+            // 2. INTERSECTION OBSERVER FOR FADE-IN SCROLL ANIMATIONS
+            const fadeElements = document.querySelectorAll('.scroll-fade');
+            
+            const scrollObserverOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+            
+            const scrollObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                    }
+                });
+            }, scrollObserverOptions);
+            
+            fadeElements.forEach(el => {
+                scrollObserver.observe(el);
+            });
+            
+            // Trigger initial viewport observation
+            setTimeout(() => {
+                document.querySelectorAll('.hero .scroll-fade').forEach(el => {
+                    el.classList.add('is-visible');
+                });
+            }, 100);
+            
+            // 3. Parallax mobile invitational frame on mousemovement
+            const viewportsContainer = document.getElementById('hero-viewports');
+            const invitationFrame = document.getElementById('mobile-invitation-frame');
+            
+            if (viewportsContainer && invitationFrame) {
+                viewportsContainer.addEventListener('mousemove', (e) => {
+                    const rect = viewportsContainer.getBoundingClientRect();
+                    const x = e.clientX - rect.left - (rect.width / 2);
+                    const y = e.clientY - rect.top - (rect.height / 2);
+                    
+                    const rotY = (x / rect.width) * 15;
+                    const rotX = (y / rect.height) * -15;
+                    
+                    invitationFrame.style.transform = `translateY(${-15 + rotX}px) rotate(${-2 + rotY}deg) scale(1.02)`;
+                });
+                
+                viewportsContainer.addEventListener('mouseleave', () => {
+                    invitationFrame.style.transform = 'translateY(0px) rotate(0deg) scale(1)';
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

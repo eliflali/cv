@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Match City: Color Hunt | Turning Streets into a Collaborative Canvas</title>
+    <meta name="description" content="A premium technical case study on Match City: Color Hunt, a gamified mobile app engineered with React Native CLI, native camera aspect buffers, and dynamic color-blocking.">
+    
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="match-city.css">
+    
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Architectural Construction Grid Grid Lines -->
+    <div class="architectural-grid"></div>
+    <div class="structural-line-left"></div>
+    <div class="structural-line-right"></div>
+
+    <!-- Navigation Header -->
+    <nav id="nav-header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">ELIF LALE <span>/ MATCH CITY</span></a>
+            <a href="index.html#projects" class="btn-back" id="btn-back-portfolio">
+                <i class="fas fa-arrow-left"></i> Back to Schematics
+            </a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section (The Street Canvas) -->
+        <section class="hero" id="match-city-hero">
+            <div class="container">
+                <div class="hero-layout">
+                    <div class="hero-text">
+                        <span class="hero-tag">CASE STUDY // 02</span>
+                        <h1 id="hero-main-title">Turning the Streets into a <span>Collaborative</span> Canvas.</h1>
+                        <p class="hero-desc">
+                            Match City: Color Hunt is a gamified urban exploration app that challenges communities to hunt and capture specific real-world colors, building massive 3x3 collaborative grids that reflect the seasonal hues of their cities.
+                        </p>
+                        
+                        <!-- Bauhaus Metadata Grid -->
+                        <div class="bauhaus-grid" id="hero-metadata-grid">
+                            <div class="metadata-item">
+                                <h4>Platform</h4>
+                                <p>Mobile Client<br>(React Native CLI)</p>
+                            </div>
+                            <div class="metadata-item">
+                                <h4>Core Architecture</h4>
+                                <p>Native Camera API & Aspect Filters</p>
+                            </div>
+                            <div class="metadata-item">
+                                <h4>UX Focus</h4>
+                                <p>Gamification & Viral Collaboration</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Smartphone Mockup with 3x3 Screen Grid -->
+                    <div class="hero-mockup-wrapper" id="hero-phone-wrapper">
+                        <div class="phone-mockup" id="phone-isometric-3d">
+                            <!-- Glowing Ambient Light Shadow -->
+                            <div class="phone-glow-ambient" id="ambient-shadow"></div>
+                            
+                            <div class="phone-inner-screen">
+                                <!-- Notch -->
+                                <div class="phone-header-notch">
+                                    <div class="notch-camera"></div>
+                                </div>
+                                
+                                <!-- App Header -->
+                                <div class="mock-app-header">
+                                    <div class="mock-app-title">Color Hunt</div>
+                                    <div class="mock-status" id="phone-status-label">Terracotta Orange</div>
+                                </div>
+                                
+                                <!-- 3x3 Grid inside phone display (half filled) -->
+                                <div class="mock-grid-3x3" id="mock-grid-container">
+                                    <!-- Filled Cells matching active hue -->
+                                    <div class="mock-grid-cell filled">
+                                        <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=150&q=80" alt="Urban brick textures">
+                                    </div>
+                                    <div class="mock-grid-cell filled">
+                                        <img src="https://images.unsplash.com/photo-1579847253509-bc015aa025a4?auto=format&fit=crop&w=150&q=80" alt="Terracotta wall">
+                                    </div>
+                                    <div class="mock-grid-cell empty">
+                                        <i class="fas fa-camera"></i>
+                                    </div>
+                                    
+                                    <div class="mock-grid-cell empty">
+                                        <i class="fas fa-camera"></i>
+                                    </div>
+                                    <div class="mock-grid-cell filled">
+                                        <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=150&q=80" alt="Terracotta architecture">
+                                    </div>
+                                    <div class="mock-grid-cell empty">
+                                        <i class="fas fa-camera"></i>
+                                    </div>
+                                    
+                                    <div class="mock-grid-cell filled">
+                                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=150&q=80" alt="Street detail">
+                                    </div>
+                                    <div class="mock-grid-cell empty">
+                                        <i class="fas fa-camera"></i>
+                                    </div>
+                                    <div class="mock-grid-cell empty">
+                                        <i class="fas fa-camera"></i>
+                                    </div>
+                                </div>
+                                
+                                <!-- Shutter and UI Controls -->
+                                <div class="mock-app-bottom-bar">
+                                    <i class="fas fa-bolt" style="color: var(--color-text-dim);"></i>
+                                    <div class="mock-shutter-btn" id="phone-shutter-action">
+                                        <div class="mock-shutter-inner"></div>
+                                    </div>
+                                    <i class="fas fa-images" style="color: var(--color-text-dim);"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Color Shift Simulation -->
+        <section class="interactive-shift-section" id="interactive-shift">
+            <div class="container">
+                <div class="section-header">
+                    <span class="hero-tag">THE INTERACTIVE CONSOLE</span>
+                    <h2>The <span>Color Shift</span> Experience</h2>
+                    <p>Click any active hue below to trigger a hardware-style camera shutter transition and shift the collaborative canvas coordinates.</p>
+                </div>
+
+                <!-- Palette Selector circles -->
+                <div class="palette-selector-bar" id="palette-buttons-selector">
+                    <button class="palette-btn active" data-color="#E07A5F" data-color-name="Terracotta Orange" data-glow="rgba(224, 122, 95, 0.3)">
+                        <div class="color-swatch-circle swatch-terracotta"></div>
+                        <span class="palette-label">Terracotta Orange</span>
+                    </button>
+                    
+                    <button class="palette-btn" data-color="#81B29A" data-color-name="Sage Green" data-glow="rgba(129, 178, 154, 0.3)">
+                        <div class="color-swatch-circle swatch-sage"></div>
+                        <span class="palette-label">Sage Green</span>
+                    </button>
+                    
+                    <button class="palette-btn" data-color="#F2CC8F" data-color-name="Mustard Yellow" data-glow="rgba(242, 204, 143, 0.3)">
+                        <div class="color-swatch-circle swatch-mustard"></div>
+                        <span class="palette-label">Mustard Yellow</span>
+                    </button>
+                </div>
+
+                <!-- The 3x3 Masterpiece Grid -->
+                <div class="hunt-grid-outer" id="masterpiece-grid-container">
+                    <!-- Dynamic Camera Shutter curtain overlay -->
+                    <div class="shutter-curtain" id="shutter-shroud"></div>
+                    
+                    <div class="masterpiece-3x3-grid" id="masterpiece-grid-element">
+                        <!-- Cell 1 -->
+                        <div class="grid-item-card">
+                            <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=400&q=80" alt="Urban brick textures">
+                            <div class="grid-tech-overlay">
+                                <span>CELL 1/9</span>
+                                <p>Compression: WebP (Lossless)<br>Latency: 12ms (Native GPU)<br>Exif: ISO 100 f/1.8</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Cell 2 -->
+                        <div class="grid-item-card">
+                            <img src="https://images.unsplash.com/photo-1579847253509-bc015aa025a4?auto=format&fit=crop&w=400&q=80" alt="Terracotta wall">
+                            <div class="grid-tech-overlay">
+                                <span>CELL 2/9</span>
+                                <p>Compression: WebP (Lossless)<br>Latency: 14ms (Native GPU)<br>Exif: ISO 200 f/2.0</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Cell 3 -->
+                        <div class="grid-item-card">
+                            <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=400&q=80" alt="Terracotta architecture">
+                            <div class="grid-tech-overlay">
+                                <span>CELL 3/9</span>
+                                <p>Compression: WebP (Lossless)<br>Latency: 11ms (Native GPU)<br>Exif: ISO 100 f/1.8</p>
+                            </div>
+                        </div>
+
+                        <!-- Cell 4 -->
+                        <div class="grid-item-card">
+                            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=400&q=80" alt="Street detail">
+                            <div class="grid-tech-overlay">
+                                <span>CELL 4/9</span>
+                                <p>Compression: WebP (Lossless)<br>Latency: 18ms (Native GPU)<br>Exif: ISO 400 f/2.2</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Cell 5 -->
+                        <div class="grid-item-card">
+                            <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=400&q=80" alt="Food cart texture">
+                            <div class="grid-tech-overlay">
+                                <span>CELL 5/9</span>
+                                <p>Compression: WebP (Lossless)<br>Latency: 12ms (Native GPU)<br>Exif: ISO 100 f/1.8</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Cell 6 -->
+                        <div class="grid-item-card">
+                            <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=400&q=80" alt="Cafe entrance">
+                            <div class="grid-tech-overlay">
+                                <span>CELL 6/9</span>
+                                <p>Compression: WebP (Lossless)<br>Latency: 15ms (Native GPU)<br>Exif: ISO 200 f/2.0</p>
+                            </div>
+                        </div>
+
+                        <!-- Cell 7 -->
+                        <div class="grid-item-card">
+                            <img src="https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=400&q=80" alt="Storefront detail">
+                            <div class="grid-tech-overlay">
+                                <span>CELL 7/9</span>
+                                <p>Compression: WebP (Lossless)<br>Latency: 14ms (Native GPU)<br>Exif: ISO 100 f/1.8</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Cell 8 -->
+                        <div class="grid-item-card">
+                            <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=400&q=80" alt="Subway tile details">
+                            <div class="grid-tech-overlay">
+                                <span>CELL 8/9</span>
+                                <p>Compression: WebP (Lossless)<br>Latency: 19ms (Native GPU)<br>Exif: ISO 800 f/2.8</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Cell 9 -->
+                        <div class="grid-item-card">
+                            <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=400&q=80" alt="Warm concrete facade">
+                            <div class="grid-tech-overlay">
+                                <span>CELL 9/9</span>
+                                <p>Compression: WebP (Lossless)<br>Latency: 13ms (Native GPU)<br>Exif: ISO 100 f/1.8</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Engineering & Native Hardware Integration -->
+        <section class="engineering-section" id="native-hardware">
+            <div class="container">
+                <div class="engineering-grid">
+                    <!-- Left: Camera Mechanical Iris Visualizer -->
+                    <div class="camera-lens-graphic-container">
+                        <div class="camera-shutter-iris" id="camera-mechanical-iris">
+                            <!-- Iris blades -->
+                            <div class="iris-blade"></div>
+                            <div class="iris-blade"></div>
+                            <div class="iris-blade"></div>
+                            <div class="iris-blade"></div>
+                            <div class="iris-blade"></div>
+                            <div class="iris-blade"></div>
+                            <div class="iris-blade"></div>
+                            <div class="iris-blade"></div>
+                            
+                            <!-- Aperture glass center -->
+                            <div class="lens-center-ring" id="lens-center-glow">
+                                <span class="lens-aperture-focal" id="lens-shutter-label">f/1.8</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Technical Breakdown -->
+                    <div class="engineering-text">
+                        <span class="hero-tag">THE HARDWARE INTERFACE</span>
+                        <h3>Bridges, Aspects & Exports.</h3>
+                        <p>
+                            Building a minimalist, hyper-responsive camera interface in React Native CLI required bypassing standard React Native abstractions and binding directly to native device camera components.
+                        </p>
+                        
+                        <!-- Console specs cards -->
+                        <div class="engineering-specs-console">
+                            <div class="console-blueprint-grid"></div>
+                            
+                            <div class="specs-grid">
+                                <div class="specs-card">
+                                    <h4>01 // Square Aspect Ratio Buffers</h4>
+                                    <p>Standard OS camera viewfinders stream 4:3 or 16:9 aspect ratios. We bound custom native shaders to the camera session outputs, calculating real-time viewport aspect ratio bounds to enforce pixel-perfect 1:1 squares inside low-latency preview frames.</p>
+                                </div>
+                                <div class="specs-card">
+                                    <h4>02 // Threaded Image Processing</h4>
+                                    <p>Pixel color evaluation occurs on dedicated native background threads (Grand Central Dispatch on iOS, ThreadPool on Android). We calculate color vector coordinates using fast euclidean distance models, completing compression tasks in under 18ms.</p>
+                                </div>
+                                <div class="specs-card">
+                                    <h4>03 // High-Fidelity Social share exports</h4>
+                                    <p>Captured color grids are processed using hardware canvas drawing scripts, generating crisp WebP assets containing localized color details, ready to export instantly via Native OS UI Sharing Sheets.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Philosophy Statement -->
+        <section class="philosophy-banner" id="philosophical-statement">
+            <div class="container">
+                <div class="philosophy-box">
+                    <h3>THE METRIC OF STREETS</h3>
+                    <p>
+                        "Turning ordinary street blocks into dynamic galleries, where every brick and tile is a <span>shared masterpiece</span>."
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 ELIF LALE. MATCH CITY TECHNICAL CASE STUDY. ALL RIGHTS RESERVED.</p>
+        </div>
+    </footer>
+
+    <!-- Interactive Scripts & Animations -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            // 1. Live Color Shift Interaction Console
+            const paletteButtons = document.querySelectorAll('.palette-btn');
+            const masterpieceGridContainer = document.getElementById('masterpiece-grid-container');
+            const phoneStatusLabel = document.getElementById('phone-status-label');
+            const phoneShutterAction = document.getElementById('phone-shutter-action');
+            const lensCenterGlow = document.getElementById('lens-center-glow');
+            const lensShutterLabel = document.getElementById('lens-shutter-label');
+            
+            // Color data records
+            paletteButtons.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    if (btn.classList.contains('active')) return;
+                    
+                    const targetColor = btn.getAttribute('data-color');
+                    const colorName = btn.getAttribute('data-color-name');
+                    const glowValue = btn.getAttribute('data-glow');
+                    
+                    // Activate active class on selector circles
+                    paletteButtons.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    
+                    // Trigger camera shutter flash effect!
+                    masterpieceGridContainer.classList.add('trigger-shutter');
+                    
+                    // Physical camera shutter auditory/visual feel inside the mockup
+                    phoneShutterAction.style.transform = 'scale(0.85)';
+                    
+                    setTimeout(() => {
+                        // Apply CSS variables to root dynamically
+                        document.documentElement.style.setProperty('--color-active', targetColor);
+                        document.documentElement.style.setProperty('--color-active-glow', glowValue);
+                        
+                        // Update status labels
+                        phoneStatusLabel.textContent = colorName;
+                        
+                        // Update camera lens graphic details in Section 4
+                        lensShutterLabel.textContent = colorName.split(' ')[0];
+                        
+                    }, 400); // Trigger mid-shutter closing
+                    
+                    setTimeout(() => {
+                        masterpieceGridContainer.classList.remove('trigger-shutter');
+                        phoneShutterAction.style.transform = 'scale(1)';
+                    }, 800); // Clear shutter transition
+                });
+            });
+            
+            // Mock phone shutter click trigger
+            phoneShutterAction.addEventListener('click', () => {
+                // Find next color index to cycles through palettes dynamically on phone shutter click!
+                let activeIndex = 0;
+                paletteButtons.forEach((btn, index) => {
+                    if (btn.classList.contains('active')) activeIndex = index;
+                });
+                
+                const nextIndex = (activeIndex + 1) % paletteButtons.length;
+                paletteButtons[nextIndex].click();
+            });
+
+            // 2. Parallax Phone Tilt on mouse movement
+            const phoneIsometric = document.getElementById('phone-isometric-3d');
+            const phoneWrapper = document.getElementById('hero-phone-wrapper');
+            
+            if (phoneWrapper && phoneIsometric) {
+                phoneWrapper.addEventListener('mousemove', (e) => {
+                    const rect = phoneWrapper.getBoundingClientRect();
+                    const x = e.clientX - rect.left - (rect.width / 2);
+                    const y = e.clientY - rect.top - (rect.height / 2);
+                    
+                    // Subtle dynamic tilt calculations
+                    const rotX = (y / rect.height) * -20;
+                    const rotY = (x / rect.width) * 20;
+                    
+                    phoneIsometric.style.transform = `rotateX(${5 + rotX}deg) rotateY(${10 + rotY}deg)`;
+                });
+                
+                phoneWrapper.addEventListener('mouseleave', () => {
+                    phoneIsometric.style.transform = `rotateX(0deg) rotateY(0deg)`;
+                });
+            }
+            
+            // 3. Shutter blades rotation simulation in Section 4
+            const mechanicalIris = document.getElementById('camera-mechanical-iris');
+            let rotation = 0;
+            
+            window.addEventListener('scroll', () => {
+                const scrollPercentage = window.scrollY / (document.documentElement.scrollHeight - window.innerHeight);
+                rotation = scrollPercentage * 360;
+                
+                // Rotates iris blades slightly as user scrolls, creating a mechanically alive feeling!
+                const blades = document.querySelectorAll('.iris-blade');
+                blades.forEach((blade, index) => {
+                    const baseRotation = index * 45;
+                    blade.style.transform = `rotate(${baseRotation + (rotation * 0.15)}deg) translate(0, 0)`;
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

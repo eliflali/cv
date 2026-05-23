@@ -5,17 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doku | Digitalizing Matrimony with Architectural Elegance</title>
-    <meta name="description" content="A premium technical case study on Doku, a Next-Gen Event and Wedding management micro-SaaS platform engineered with Next.js SSR, serverless Supabase, and Lemon Squeezy Merchant of Record integration.">
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    
+    <meta name="description"
+        content="A premium technical case study on Doku, a Next-Gen Event and Wedding management micro-SaaS platform engineered with Next.js SSR, serverless Supabase, and Lemon Squeezy Merchant of Record integration.">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
     <!-- CSS Stylesheets -->
     <link rel="stylesheet" href="doku.css">
-    
+
     <!-- Fonts & Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -43,9 +46,12 @@
                         <span class="editorial-tag">CASE STUDY // 04</span>
                         <h1 id="hero-main-title">Digitalizing Matrimony with <span>Architectural</span> Elegance.</h1>
                         <p class="hero-desc">
-                            Doku is a premium, quiet-luxury Micro-SaaS event orchestration platform designed for modern couples. Combining modular design engines with high-frequency server-side operations, it solves complex guest registries, algorithmic style quizzes, and dynamic invitation rendering.
+                            Doku is a premium, quiet-luxury Micro-SaaS event orchestration platform designed for modern
+                            couples. Combining modular design engines with high-frequency server-side operations, it
+                            solves complex guest registries, algorithmic style quizzes, and dynamic invitation
+                            rendering.
                         </p>
-                        
+
                         <!-- Bauhaus Grid Specifications -->
                         <div class="bauhaus-grid" id="hero-metadata-grid">
                             <div class="metadata-item">
@@ -72,16 +78,17 @@
                                 <div class="mock-dot"></div>
                                 <div class="mock-dot"></div>
                             </div>
-                            
+
                             <div class="dashboard-double-columns">
                                 <!-- Sidebar column -->
                                 <div class="mock-sidebar">
-                                    <div class="sidebar-line" style="width: 50%; height: 8px; background: var(--color-gold);"></div>
+                                    <div class="sidebar-line"
+                                        style="width: 50%; height: 8px; background: var(--color-gold);"></div>
                                     <div class="sidebar-line"></div>
                                     <div class="sidebar-line"></div>
                                     <div class="sidebar-line"></div>
                                 </div>
-                                
+
                                 <!-- Left Main Column: RSVP List Registry -->
                                 <div class="mock-column">
                                     <div class="column-header-block"></div>
@@ -91,12 +98,14 @@
                                     <div class="mock-guest-row"></div>
                                     <div class="mock-guest-row"></div>
                                 </div>
-                                
+
                                 <!-- Right Main Column: Theme Analytics Chart Mockup -->
                                 <div class="mock-column">
                                     <div class="column-header-block" style="width: 40%;"></div>
-                                    <div style="flex: 1; border: 1px dashed rgba(250,246,240,0.1); border-radius: 4px; display: flex; justify-content: center; align-items: center;">
-                                        <i class="fas fa-chart-line" style="color: var(--color-gold); font-size: 1.5rem; opacity: 0.6;"></i>
+                                    <div
+                                        style="flex: 1; border: 1px dashed rgba(250,246,240,0.1); border-radius: 4px; display: flex; justify-content: center; align-items: center;">
+                                        <i class="fas fa-chart-line"
+                                            style="color: var(--color-gold); font-size: 1.5rem; opacity: 0.6;"></i>
                                     </div>
                                     <div class="mock-guest-row"></div>
                                 </div>
@@ -109,12 +118,15 @@
                                 <div class="invitation-logo">C & S</div>
                                 <div class="invitation-flame-art"></div>
                                 <div style="text-align: center; margin: 1.5rem 0;">
-                                    <p style="font-family: var(--font-serif); font-size: 0.8rem; font-style: italic; color: #1A1A1A; line-height: 1.3;">
+                                    <p
+                                        style="font-family: var(--font-serif); font-size: 0.8rem; font-style: italic; color: #1A1A1A; line-height: 1.3;">
                                         Join us for our quiet reception in Berlin
                                     </p>
-                                    <span style="font-family: var(--font-sans); font-size: 0.45rem; color: var(--color-gold); letter-spacing: 2px; text-transform: uppercase;">Sept 2026</span>
+                                    <span
+                                        style="font-family: var(--font-sans); font-size: 0.45rem; color: var(--color-gold); letter-spacing: 2px; text-transform: uppercase;">Sept
+                                        2026</span>
                                 </div>
-                                
+
                                 <!-- Glassmorphic RSVP action card inside mockup -->
                                 <div class="glass-rsvp-card">
                                     <h5>Are you attending?</h5>
@@ -143,7 +155,11 @@
                         <div class="card-icon"><i class="fas fa-database"></i></div>
                         <h3>Supabase Serverless DB</h3>
                         <p>
-                            Couples' wedding invitations experience highly concentrated traffic spikes when invitations are dispatched. To ensure sub-millisecond response times under heavy concurrent loads, Doku utilizes a serverless Supabase connection pool integrated with Postgres Database Functions. This architecture processes dynamic guest RSVP writes and dietary checkoffs concurrently with direct PL/pgSQL database execution, avoiding cold-start API gateways.
+                            Couples' wedding invitations experience highly concentrated traffic spikes when invitations
+                            are dispatched. To ensure sub-millisecond response times under heavy concurrent loads, Doku
+                            utilizes a serverless Supabase connection pool integrated with Postgres Database Functions.
+                            This architecture processes dynamic guest RSVP writes and dietary checkoffs concurrently
+                            with direct PL/pgSQL database execution, avoiding cold-start API gateways.
                         </p>
                         <span class="matrix-tech-tag">// RESPONSE METRIC: SUB-MILLISECOND TRANSACTION LIFETIMES</span>
                     </div>
@@ -154,7 +170,12 @@
                         <div class="card-icon"><i class="fab fa-react"></i></div>
                         <h3>Next.js SSR Metadata Engine</h3>
                         <p>
-                            Modern wedding communication is highly collaborative. When sharing dynamic invitation links on messaging platforms (WhatsApp, Telegram, Instagram), generating flawless rich-link previews (displaying couple names and cover images) is critical. We designed a server-side rendering (SSR) rendering cycle in Next.js that parses request URIs and pre-injects OpenGraph meta tag schemas into the document payload prior to DOM rendering, guaranteeing 100% dynamic rich-previews.
+                            Modern wedding communication is highly collaborative. When sharing dynamic invitation links
+                            on messaging platforms (WhatsApp, Telegram, Instagram), generating flawless rich-link
+                            previews (displaying couple names and cover images) is critical. We designed a server-side
+                            rendering (SSR) rendering cycle in Next.js that parses request URIs and pre-injects
+                            OpenGraph meta tag schemas into the document payload prior to DOM rendering, guaranteeing
+                            100% dynamic rich-previews.
                         </p>
                         <span class="matrix-tech-tag">// SEO METRIC: 100% og:tag COVERAGE</span>
                     </div>
@@ -165,33 +186,42 @@
         <!-- Interactive Feature Showcases -->
         <section class="interactive-showcases-section" id="feature-showcases">
             <div class="container">
-                
+
                 <!-- Feature A: Art Movement Theme Engine -->
                 <div class="editorial-header scroll-fade">
                     <span class="editorial-tag">EXHIBIT B</span>
                     <h2>The <span>Theme Engine</span> Simulation</h2>
-                    <p>An interactive playground showcasing how Doku utilizes CSS variables to dynamically swap art movement configurations in real-time.</p>
+                    <p>An interactive playground showcasing how Doku utilizes CSS variables to dynamically swap art
+                        movement configurations in real-time.</p>
                 </div>
 
                 <div class="theme-engine-card-layout scroll-fade" id="theme-engine-block">
                     <!-- Tabs -->
                     <div class="theme-selector-tabs">
-                        <button class="theme-tab-btn active" data-theme="vienna" data-bg="#FFFFF0" data-text="#1A1A1A" data-gold="#B8860B" data-border="rgba(184, 134, 11, 0.3)" data-radius="0px" data-font="'Playfair Display', serif">
+                        <button class="theme-tab-btn active" data-theme="vienna" data-bg="#FFFFF0" data-text="#1A1A1A"
+                            data-gold="#B8860B" data-border="rgba(184, 134, 11, 0.3)" data-radius="0px"
+                            data-font="'Playfair Display', serif">
                             <h4>Vienna Secession</h4>
                             <div class="tab-indicator-deco"></div>
                         </button>
-                        
-                        <button class="theme-tab-btn" data-theme="bauhaus" data-bg="#FFFFFF" data-text="#000000" data-gold="#FF3E3E" data-border="rgba(0,0,0,0.15)" data-radius="0px" data-font="'Inter', sans-serif">
+
+                        <button class="theme-tab-btn" data-theme="bauhaus" data-bg="#FFFFFF" data-text="#000000"
+                            data-gold="#FF3E3E" data-border="rgba(0,0,0,0.15)" data-radius="0px"
+                            data-font="'Inter', sans-serif">
                             <h4>Bauhaus Minimalist</h4>
                             <div class="tab-indicator-deco"></div>
                         </button>
-                        
-                        <button class="theme-tab-btn" data-theme="impressionism" data-bg="#F6E8EA" data-text="#3E3E3E" data-gold="#8EAD9B" data-border="rgba(142, 173, 155, 0.3)" data-radius="24px" data-font="'Playfair Display', serif">
+
+                        <button class="theme-tab-btn" data-theme="impressionism" data-bg="#F6E8EA" data-text="#3E3E3E"
+                            data-gold="#8EAD9B" data-border="rgba(142, 173, 155, 0.3)" data-radius="24px"
+                            data-font="'Playfair Display', serif">
                             <h4>Impressionism Pastel</h4>
                             <div class="tab-indicator-deco"></div>
                         </button>
-                        
-                        <button class="theme-tab-btn" data-theme="futurism" data-bg="#1D1E2C" data-text="#F5F5F0" data-gold="#00E5FF" data-border="rgba(0, 229, 255, 0.3)" data-radius="8px" data-font="'JetBrains Mono', monospace">
+
+                        <button class="theme-tab-btn" data-theme="futurism" data-bg="#1D1E2C" data-text="#F5F5F0"
+                            data-gold="#00E5FF" data-border="rgba(0, 229, 255, 0.3)" data-radius="8px"
+                            data-font="'JetBrains Mono', monospace">
                             <h4>Futurism Cyber</h4>
                             <div class="tab-indicator-deco"></div>
                         </button>
@@ -203,7 +233,8 @@
                             <h3 id="preview-card-title">Sophia & Charles</h3>
                             <div class="theme-accent-line"></div>
                             <p id="preview-card-text">
-                                We invite you to share in our celebration of intentional love and digital sanctuary as we commit our paths under the quiet boughs.
+                                We invite you to share in our celebration of intentional love and digital sanctuary as
+                                we commit our paths under the quiet boughs.
                             </p>
                             <button class="btn-theme-dynamic" id="btn-preview-action">Confirm RSVP</button>
                         </div>
@@ -214,7 +245,8 @@
                 <div class="editorial-header scroll-fade" style="margin-top: 6rem;">
                     <span class="editorial-tag">EXHIBIT C</span>
                     <h2>Algorithmic <span>Aesthetic Quiz</span></h2>
-                    <p>A thin-line representation tracing how user design inputs are transformed into architectural theme arrays by the backend.</p>
+                    <p>A thin-line representation tracing how user design inputs are transformed into architectural
+                        theme arrays by the backend.</p>
                 </div>
 
                 <div class="quiz-flow-card scroll-fade" id="algorithmic-quiz-board">
@@ -223,15 +255,17 @@
                         <div class="wireframe-step-node active">
                             <span>STEP 01</span>
                             <h5>User Aesthetics Inputs</h5>
-                            <p style="font-size: 0.7rem; color: var(--color-text-dim); margin-top: 0.5rem;">User selects style attributes (Curved lines vs. Stark angles)</p>
+                            <p style="font-size: 0.7rem; color: var(--color-text-dim); margin-top: 0.5rem;">User selects
+                                style attributes (Curved lines vs. Stark angles)</p>
                         </div>
-                        
+
                         <!-- Arrow -->
                         <div class="wireframe-flow-arrow"><i class="fas fa-chevron-right"></i></div>
-                        
+
                         <!-- Step 2 (Algorithm calculation console) -->
                         <div class="wireframe-calculation-pane">
-                            <span style="color: var(--color-text-bright); display: block; margin-bottom: 0.5rem;">-- Supabase Postgres Function</span>
+                            <span style="color: var(--color-text-bright); display: block; margin-bottom: 0.5rem;">--
+                                Supabase Postgres Function</span>
                             create or replace function get_aesthetic_theme(<br>
                             &nbsp;&nbsp;weight_angles float,<br>
                             &nbsp;&nbsp;weight_curves float<br>
@@ -244,15 +278,16 @@
                             &nbsp;&nbsp;end if;<br>
                             end; $$;
                         </div>
-                        
+
                         <!-- Arrow -->
                         <div class="wireframe-flow-arrow"><i class="fas fa-chevron-right"></i></div>
-                        
+
                         <!-- Step 3 -->
                         <div class="wireframe-step-node active">
                             <span>STEP 03</span>
                             <h5>Dynamic Style Swaps</h5>
-                            <p style="font-size: 0.7rem; color: var(--color-text-dim); margin-top: 0.5rem;">Injects CSS variables to dynamically style user dashboards</p>
+                            <p style="font-size: 0.7rem; color: var(--color-text-dim); margin-top: 0.5rem;">Injects CSS
+                                variables to dynamically style user dashboards</p>
                         </div>
                     </div>
                 </div>
@@ -261,7 +296,8 @@
                 <div class="editorial-header scroll-fade">
                     <span class="editorial-tag">EXHIBIT D</span>
                     <h2>Guest <span>Comfort</span> Registry</h2>
-                    <p>Providing functional, architectural warning systems built to anticipate guest requirements on the dynamic invitation sheets.</p>
+                    <p>Providing functional, architectural warning systems built to anticipate guest requirements on the
+                        dynamic invitation sheets.</p>
                 </div>
 
                 <div class="guest-comfort-grid scroll-fade" id="guest-comfort-cards">
@@ -270,7 +306,8 @@
                         <div class="comfort-icon"><i class="fas fa-cloud-sun-rain"></i></div>
                         <h4>Weather Alert System</h4>
                         <p>
-                            Syncs with real-time location weather APIs. Couples can toggle notifications to alert guests of sudden downpours, offering suggestions like huddling under espresso awnings in Berlin.
+                            Syncs with real-time location weather APIs. Couples can toggle notifications to alert guests
+                            of sudden downpours, offering suggestions like huddling under espresso awnings in Berlin.
                         </p>
                     </div>
 
@@ -279,7 +316,8 @@
                         <div class="comfort-icon"><i class="fas fa-shoe-prints"></i></div>
                         <h4>Stiletto/Heel warnings</h4>
                         <p>
-                            Alerts guests of the physical reception terrains. Warns attendees if the location features gravel walks, stone plazas, or grassy gardens to coordinate footwear.
+                            Alerts guests of the physical reception terrains. Warns attendees if the location features
+                            gravel walks, stone plazas, or grassy gardens to coordinate footwear.
                         </p>
                     </div>
 
@@ -288,7 +326,8 @@
                         <div class="comfort-icon"><i class="fas fa-apple-whole"></i></div>
                         <h4>Dietary Preference Maps</h4>
                         <p>
-                            Processes and hashes allergen criteria. Allows guests to log options (Vegan, Celiac, Halal) to populate live kitchen dashboards for catering teams.
+                            Processes and hashes allergen criteria. Allows guests to log options (Vegan, Celiac, Halal)
+                            to populate live kitchen dashboards for catering teams.
                         </p>
                     </div>
                 </div>
@@ -301,7 +340,8 @@
                 <div class="editorial-header scroll-fade">
                     <span class="editorial-tag">EXHIBIT E</span>
                     <h2>Zodiac <span>Design Token</span> Palettes</h2>
-                    <p>Rigorous, tokenized design systems matching the emotional and architectural styles of zodiac archetypes.</p>
+                    <p>Rigorous, tokenized design systems matching the emotional and architectural styles of zodiac
+                        archetypes.</p>
                 </div>
 
                 <div class="tokens-color-grid scroll-fade" id="zodiac-tokens-grid">
@@ -377,7 +417,8 @@
                 <div class="philosophy-box scroll-fade">
                     <h3>THE MINIMALIST COMPASS</h3>
                     <p>
-                        "Matrimony deserves more than cheap templates. It demands <span>architectural spaces</span> built to stand the test of time."
+                        "Matrimony deserves more than cheap templates. It demands <span>architectural spaces</span>
+                        built to stand the test of time."
                     </p>
                 </div>
             </div>
@@ -394,19 +435,19 @@
     <!-- Interactive Scripts & Animations -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            
+
             // 1. Feature A: THEME ENGINE INTERACTIVE SYSTEM
             const themeTabs = document.querySelectorAll('.theme-tab-btn');
             const themePreviewTarget = document.getElementById('theme-preview-target');
-            
+
             themeTabs.forEach(tab => {
                 tab.addEventListener('click', () => {
                     if (tab.classList.contains('active')) return;
-                    
+
                     // Activate tab classes
                     themeTabs.forEach(t => t.classList.remove('active'));
                     tab.classList.add('active');
-                    
+
                     // Retrieve dynamic color token values
                     const bg = tab.getAttribute('data-bg');
                     const text = tab.getAttribute('data-text');
@@ -414,7 +455,7 @@
                     const border = tab.getAttribute('data-border');
                     const radius = tab.getAttribute('data-radius');
                     const font = tab.getAttribute('data-font');
-                    
+
                     // Re-variable adjacent container styles instantly
                     themePreviewTarget.style.setProperty('--theme-bg', bg);
                     themePreviewTarget.style.setProperty('--theme-text', text);
@@ -422,12 +463,12 @@
                     themePreviewTarget.style.setProperty('--theme-border', border);
                     themePreviewTarget.style.setProperty('--theme-radius', radius);
                     themePreviewTarget.style.setProperty('--theme-font', font);
-                    
+
                     // Update preview content depending on theme
                     const titleEl = document.getElementById('preview-card-title');
                     const textEl = document.getElementById('preview-card-text');
                     const themeName = tab.getAttribute('data-theme');
-                    
+
                     if (themeName === 'bauhaus') {
                         titleEl.textContent = 'S & C // 2026';
                         textEl.textContent = 'GRID RESIDENCE. METROPOLIS FUNCTIONALISM. SPARK THE SPACE. REGISTER AT THE GATEWAY FOR MATRIMONIAL SCHEMATICS.';
@@ -446,12 +487,12 @@
 
             // 2. INTERSECTION OBSERVER FOR FADE-IN SCROLL ANIMATIONS
             const fadeElements = document.querySelectorAll('.scroll-fade');
-            
+
             const scrollObserverOptions = {
                 threshold: 0.1,
                 rootMargin: '0px 0px -50px 0px'
             };
-            
+
             const scrollObserver = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
@@ -459,34 +500,34 @@
                     }
                 });
             }, scrollObserverOptions);
-            
+
             fadeElements.forEach(el => {
                 scrollObserver.observe(el);
             });
-            
+
             // Trigger initial viewport observation
             setTimeout(() => {
                 document.querySelectorAll('.hero .scroll-fade').forEach(el => {
                     el.classList.add('is-visible');
                 });
             }, 100);
-            
+
             // 3. Parallax mobile invitational frame on mousemovement
             const viewportsContainer = document.getElementById('hero-viewports');
             const invitationFrame = document.getElementById('mobile-invitation-frame');
-            
+
             if (viewportsContainer && invitationFrame) {
                 viewportsContainer.addEventListener('mousemove', (e) => {
                     const rect = viewportsContainer.getBoundingClientRect();
                     const x = e.clientX - rect.left - (rect.width / 2);
                     const y = e.clientY - rect.top - (rect.height / 2);
-                    
+
                     const rotY = (x / rect.width) * 15;
                     const rotX = (y / rect.height) * -15;
-                    
+
                     invitationFrame.style.transform = `translateY(${-15 + rotX}px) rotate(${-2 + rotY}deg) scale(1.02)`;
                 });
-                
+
                 viewportsContainer.addEventListener('mouseleave', () => {
                     invitationFrame.style.transform = 'translateY(0px) rotate(0deg) scale(1)';
                 });
